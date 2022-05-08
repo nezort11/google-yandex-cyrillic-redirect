@@ -1,12 +1,16 @@
 {
   "manifest_version": 2,
-  "name": "Google Yandex Search Redirect",
+  "name": "Google Yandex Redirect Cyrillic",
   "version": "1.0",
   "description": "Redirect cyrillic Google searches to Yandex to reach better results.",
-  "content_scripts": [
-    {
-      "matches": ["*://www.google.com/search*"],
-      "js": ["./index.js"]
-    }
-  ]
+
+  "permissions": [
+    "https://www.google.com/",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+
+  "background": {
+    "scripts": ["index.js"]
+  }
 }
