@@ -1,0 +1,12 @@
+{
+  "name": "google-yandex-redirect-cyrillic",
+  "version": "1.0.0",
+  "description": "Redirect cyrillic Google searching to Yandex in order to reach better (more localized results).",
+  "main": "index.js",
+  "scripts": {
+    "sign": "source ./.env && web-ext sign --api-key $API_KEY --api-secret $API_SECRET"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
